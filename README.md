@@ -1,0 +1,1 @@
+light-server -s . -p 7000
