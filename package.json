@@ -1,4 +1,11 @@
 {
+  "name": "ECQ-Analisys-Tool",
+  "version": "1.0.0",
+  "description": "package description",
+  "scripts": {
+    "start": "node lib/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "wordcloud": "^1.2.2"
   }
