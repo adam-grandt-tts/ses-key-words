@@ -22,13 +22,15 @@ const onChange = async () => {
       if ( count > 0 ){
         info.has.push(word);
         info.counts[word] = count
-        cloud_data.push(
-          {
-            "x": word.toLowerCase(),
-            value: count,
-            "category": category
-          }
-        )
+        if(category == "ECQ Summery"){
+          cloud_data.push(
+            {
+              "x": word.toLowerCase(),
+              value: count,
+              "category": category
+            }
+          )
+        }
       }else{
         info.missing.push(word);
       }

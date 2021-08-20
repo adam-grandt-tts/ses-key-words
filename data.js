@@ -4,6 +4,7 @@ const files = [
   "results-driven.json",
   "business-acumen.json",
   "building-coalitions.json",
+  "consolidated.json"
 ];
 
 const data = (async () => {
