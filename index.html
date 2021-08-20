@@ -15,23 +15,41 @@
   <body>
     <div class="container">
       <div class="row">
+        <div class="col-12" style="text-align:center; padding-top:15px;">
+          <h2>ECQ Analysis Tool</h2>
+          This tool allows you to self analyze your OPM executive resume or your OPM Executive Core Qualifications. To start, please paste your text in the box below. 
+        </div>
+      </div>
+      <div class="row">
         <div class="col-12">
-          Enter resume below
+          <h3>Enter data below:</h3>
           <textarea rows="5"></textarea>
         </div>
       </div>
       <div class="row">
         <div class="col-6">
+          <h3>Proficiency Levels by ECQ:</h3>
           <div id="info-panel"></div>
         </div>
         <div class="col-6">
-          Recomendations:
+          <h3>Recommendations:</h3>
+          <div id="recommendation" style="width:100%; height:100%;"></div>
           
         </div>
       </div>
-        <div class="row" id="cloud-container" style = "height:350px">
-          <div class="col-12" id="cloud-panel" >
-          </div>
+      <div class="row">
+        <div class="col-12" style="text-align:center; padding-top:15px;">
+          <h3>Most Frequently Used Words</h3>
+        </div>
+      </div>
+
+      <div class="row" id="cloud-container" style = "height:350px">
+        <div class="col-12" id="cloud-panel" >
+      </div>
+     </div>
+      <div class="row" >
+        <div class="col-12" style="text-align:left; fomt-size: small; color:grey;" >
+        This tool was developed on personal time by TTS staff to encourage Diversity, Equity, Inclusion, Accessibility efforts in the federal government. Key contributors to this tool are <a href="https://www.linkedin.com/in/anil-neil-chaudhry/" target=_BALNK>Anil Chaudhry</a>, <a href="https://www.linkedin.com/in/adam-grandt-ht0/" target=_BLANK>Adam Grandt</a>, and <a href="https://www.linkedin.com/in/greg-walker-he-him-3041464/" target=_BLANK>Greg Walker</a>. Source code available upon request. 
       </div>
     </div>    
     <script type="module" src="index.js"></script>
