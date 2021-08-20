@@ -33,9 +33,9 @@ export function occurrences(string, subString, allowOverlapping){
 
 export const getCategoryString = (category, has, total) => {
   var bg;
-  if ((has / total) < 0.26) {bg = "bg-danger"
-    }else if((has / total) < 0.50){bg = "bg-warning"
-    }else if((has / total) < 0.75){bg = "bg-info"
+  if ((has / total) < 0.21) {bg = "bg-danger"
+    }else if((has / total) < 0.41){bg = "bg-warning"
+    }else if((has / total) < 0.61){bg = "bg-info"
     }else{bg = "bg-success"}
 
   return `

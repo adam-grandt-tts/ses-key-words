@@ -7,6 +7,8 @@ const onChange = async () => {
   const strs = [];
   const categories = {};
   var cloud_data = [];
+  var missing_summery = [];
+
 
 
   Object.entries(await data).forEach(([category, words]) => {
@@ -33,6 +35,9 @@ const onChange = async () => {
         }
       }else{
         info.missing.push(word);
+        if(category == "ECQ Summery"){
+          missing_summery.push(word)
+        }
       }
 
     });
@@ -55,6 +60,10 @@ const onChange = async () => {
   chart.container("cloud-panel");
   chart.colorRange().enabled(true);
   chart.draw();
+
+  if (missing_summery.length < 348){
+    document.getElementById("recommendation").innerHTML = 'Please consider using the following words in your documents to improve your proficiency levels:<br><ul><li>' + missing_summery.slice(0,10).join("</li><li>"); + '</li></ul>';
+  }
 };
 
 const main = async () => {
