@@ -1,3 +1,10 @@
 ---
+applications:
+- name: ECQ-Analysis-Tool
+  random-route: true
+  buildpacks:
+    - staticfile_buildpack
+  memory: 256M
+
 env:
   FORCE_HTTPS: true
